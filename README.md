@@ -1,6 +1,10 @@
 # spring-mvc-jdbc-template-app
 Restfull webservices using spring-mvc-jdbc-template and data base as postgresql
 
+Table creatin:
+create table TRN_EMPLOYEE(employee_id numeric,first_name varchar, last_name varchar, age numeric);
+commit;
+
 Avaible rest end points:
 
 1- http://localhost:8080/spring-mvc-jdbc-template-app/employees --> GET

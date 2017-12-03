@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.technicalkeeda.bean.Employee;
 import com.technicalkeeda.dao.EmployeeDao;
+import com.technicalkeeda.domain.Employee;
 
 @Service("employeeService")
 public class EmployeeServiceImpl implements EmployeeService {

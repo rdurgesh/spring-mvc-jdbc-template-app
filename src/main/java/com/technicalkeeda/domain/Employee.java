@@ -1,4 +1,4 @@
-package com.technicalkeeda.bean;
+package com.technicalkeeda.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -61,10 +61,9 @@ public class Employee {
 	public String toString() {
 		StringBuilder str = new StringBuilder();
 		str.append("Employee Id:- " + getEmployeeId());
-		str.append(" First Name:- " + getFirstName());
-		str.append(" Last Name:- " + getLastName());
-		str.append(" Age:- " + getAge());
+		str.append("First Name:- " + getFirstName());
+		str.append("Last Name:- " + getLastName());
+		str.append("Age:- " + getAge());
 		return str.toString();
 	}
-
 }

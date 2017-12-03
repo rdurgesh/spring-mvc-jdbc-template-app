@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.technicalkeeda.bean.Employee;
+import com.technicalkeeda.domain.Employee;
 import com.technicalkeeda.service.EmployeeService;
 
 @RestController
@@ -23,7 +23,8 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 
-	@RequestMapping(value = "/employee", method = RequestMethod.GET, produces = APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/employees", method = RequestMethod.GET,
+			produces = APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<List<Employee>> employees() {
 
 		HttpHeaders headers = new HttpHeaders();
@@ -57,7 +58,8 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(employee, headers, HttpStatus.NO_CONTENT);
 	}
 
-	@RequestMapping(value = "/employee", method = RequestMethod.POST, produces = APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/employee", method = RequestMethod.POST,
+			produces = APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
 		HttpHeaders headers = new HttpHeaders();
 		if (employee == null) {

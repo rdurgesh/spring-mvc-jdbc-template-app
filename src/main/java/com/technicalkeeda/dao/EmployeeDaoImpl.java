@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.technicalkeeda.bean.Employee;
+import com.technicalkeeda.domain.Employee;
 
 @Repository("employeeDao")
 public class EmployeeDaoImpl implements EmployeeDao {

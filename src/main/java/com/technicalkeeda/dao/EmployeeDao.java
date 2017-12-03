@@ -2,7 +2,7 @@ package com.technicalkeeda.dao;
 
 import java.util.List;
 
-import com.technicalkeeda.bean.Employee;
+import com.technicalkeeda.domain.Employee;
 
 public interface EmployeeDao {
 
